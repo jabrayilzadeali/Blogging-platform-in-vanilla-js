@@ -1,25 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="module" src="src/main.js"></script>
+    <script type="module" src="src/createCSS.js"></script>
+    <link rel="stylesheet" href="style/base.css">
 </head>
+
 <body>
     <main>
-        <header>
-            <div class="logo"></div>
-            <nav>
-                <ul>
-                    <li><a href="#">most Popular</a></li>
-                    <li><a href="#">Latest</a></li>
+        <header class="flex justify-between align-center px-2 py-1">
+            <div class="logo">
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                    id="screenshot-b3667381-74e5-808e-8002-4672745bcd2e" viewBox="0 0 81 84"
+                    style="-webkit-print-color-adjust: exact;" fill="none" version="1.1">
+                    <g id="shape-b3667381-74e5-808e-8002-4672745bcd2e" version="1.0" width="130.000000pt"
+                        height="101.000000pt" preserveAspectRatio="xMidYMid meet" rx="0" ry="0"
+                        style="fill: rgb(0, 0, 0);">
+                        <g id="shape-b3667381-74e5-808e-8002-4672745c52bc" rx="0" ry="0" style="fill: rgb(0, 0, 0);">
+                            <g id="shape-b3667381-74e5-808e-8002-4672745d3574">
+                                <g class="fills" id="fills-b3667381-74e5-808e-8002-4672745d3574">
+                                    <path stroke="none" rx="0" ry="0"
+                                        d="M36.700,3.800L33.000,7.600L33.000,42.100L33.000,76.600L36.800,80.300L40.600,84.000L44.300,80.200L48.000,76.400L48.000,41.900L48.000,7.400L44.200,3.700L40.400,0.000L36.700,3.800ZZ"
+                                        />
+                                </g>
+                            </g>
+                            <g id="shape-b3667381-74e5-808e-8002-4672745d8c93">
+                                <g class="fills" id="fills-b3667381-74e5-808e-8002-4672745d8c93">
+                                    <path stroke="none" rx="0" ry="0"
+                                        d="M4.200,20.300L0.000,24.600L0.000,42.100L0.000,59.600L4.000,63.500L8.000,67.400L12.000,63.500L16.000,59.600L16.000,41.500L16.000,23.400L12.200,19.700L8.400,16.000L4.200,20.300ZZ"
+                                        />
+                                </g>
+                            </g>
+                            <g id="shape-b3667381-74e5-808e-8002-4672745dd708">
+                                <g class="fills" id="fills-b3667381-74e5-808e-8002-4672745dd708">
+                                    <path stroke="none" rx="0" ry="0"
+                                        d="M68.200,20.300L65.000,23.600L65.000,41.600L65.000,59.600L69.000,63.500L73.000,67.400L77.000,63.500L81.000,59.600L81.000,42.000L81.000,24.400L77.200,20.700C75.100,18.700,73.000,17.000,72.400,17.000C71.800,17.000,70.000,18.500,68.200,20.300ZZ"
+                                        />
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <nav class="navbar">
+                <ul class="flex gap-1">
+                    <li><a class="navbar__link" href="#">most Popular</a></li>
+                    <li><a class="navbar__link" href="#">Latest</a></li>
                 </ul>
             </nav>
-            <div>
+            <div class="navbar__auth">
                 <span id="username"></span>
-                <ul class="authentication">
+                <ul class="authentication flex gap-1">
                 </ul>
             </div>
         </header>
@@ -27,4 +64,5 @@
         </section>
     </main>
 </body>
+
 </html>

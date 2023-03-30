@@ -1,0 +1,187 @@
+/* .my-red {
+    background-color: red;
+} */
+:root {
+    --bg-color: hsl(220, 15%, 16%);
+    --color: hsl(220, 20%, 97%);
+}
+
+
+/* Josh Comeau css reset */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+*/
+html,
+body {
+    height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* Josh Comeau css reset end */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--color);
+}
+
+/* Utility Classes */
+/* 
+    gaps
+*/
+    
+.gap-5 {
+    gap: 5rem;
+}
+
+.gap-4 {
+    gap: 4rem;
+}
+
+.gap-3 {
+    gap: 3rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+/* 
+    Flexbox 
+*/
+.flex {
+    display: flex;
+}
+
+/* justify */
+.justify-center {
+    justify-content: center;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+/* align */
+.align-center {
+    align-items: center;
+}
+
+.align-between {
+    align-items: space-between;
+}
+
+.align-around {
+    align-items: space-around;
+    
+}
+
+/* flex-center */
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+/* Utility Classes end */
+
+/* Navbar */
+/* editing logo */
+.logo svg {
+    width: 50px;
+
+}
+.logo svg path {
+    fill: var(--color);
+}
+
+.navbar__link {
+    color: var(--color);
+}
+
+.navbar__auth li a{
+    color: var(--color)
+}
+/* Navbar end */
